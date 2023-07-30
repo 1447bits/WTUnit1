@@ -1,0 +1,263 @@
+/* content */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* code */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+/* heading */
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+:root {
+    --headingfont: "Mulish";
+    --contentfont: "Poppins";
+    --codefont: "Roboto Mono";
+    --font-color: #d6d6d4;
+}
+
+* {
+    font-family: var(--contentfont);
+    color: var(--font-color);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #121212;
+}
+
+#main {
+    margin-inline: auto;
+    max-width: 1000px;
+    background: linear-gradient(to right, #101010, #ffffff05, rgb(13, 8, 11));
+    box-shadow: 2px 5px 20px 15px #ffffff05;
+    min-height: 100dvh;
+    color: var(--font-color);
+    padding: 2em;
+}
+
+.commmenttext::before {
+    content: "<!--";
+}
+
+.commmenttext::after {
+    content: "-->";
+}
+
+.commmenttext {
+    opacity: 0.5;
+}
+
+
+#syllabuscovered>* {
+    display: unset;
+}
+
+.heading {
+    font-family: var(--headingfont);
+    font-size: larger;
+    font-weight: bold;
+}
+
+#mainBody {
+    margin-top: 2em;
+}
+
+.mainBody-contents {
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    border-bottom: 2px solid wheat;
+}
+
+ul.content-desc>li {
+    font-size: 1em;
+    list-style: disc;
+    margin-left: 3em;
+}
+
+.indexlinktxt {
+    font-style: normal;
+    text-decoration: none;
+    color: var(--font-color);
+    cursor: pointer;
+    padding: 0.1em 0.2em;
+    margin: 0.1em 0.2em;
+    background: #ffffff22;
+}
+
+.fadedtext {
+    font-family: var(--codefont);
+    font-style: normal;
+    opacity: .6;
+    display: inline;
+}
+
+#htmlElements-img-container {
+    margin-top: 2em;
+}
+
+#htmlElements-img,
+#htmlElements-img-container {
+    width: 100%;
+    border: 2px solid grey;
+    padding: 0.2em;
+    border-radius: 5px;
+}
+
+.elements-headingtag {
+    margin: 10px 0 10px 0;
+    width: 100%;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 40% 70%;
+}
+
+#elements-brtag,
+#elements-ptag {
+    margin-top: 2em;
+}
+
+#fchead {
+    background-color: grey;
+    padding: 1em;
+    border-radius: 80px 8px;
+}
+
+#colorsAndFonts {
+    width: 100%;
+}
+
+a {
+    color: var(--font-color);
+}
+
+.highlight-grey {
+    color: #ebe17e;
+    font-style: normal;
+    font-size: 1.1em;
+}
+
+.highlight {
+    font-size: 1.1em;
+    font-style: normal;
+    color: gold;
+}
+
+#iframecontainer {
+    width: 100%;
+}
+
+.olexampleimg-container,
+.olexampleimg {
+    width: 90%;
+}
+
+.listexampleimg-container,
+.listexampleimg {
+    width: 100%;
+    border: 2px solid grey;
+    padding: 0.2em;
+    border-radius: 12px;
+}
+
+ol.olexample>li {
+    margin-left: 2em;
+    list-style: lower-alpha;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+tr:nth-child(even) {
+    background-color: #D6EEEE12;
+}
+
+th,
+td {
+    border: 1px solid #16a46580;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    color: #121212;
+    font-weight: bold;
+    background-color: var(--font-color);
+}
+
+caption {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.imgexplainimg {
+    margin: 0.5em;
+    border-radius: 8px;
+}
+
+code.imgtagexamplecode {
+    background-color: #5f5f5f64;
+    padding: 0.2em 0.3em;
+    margin: 0.5em;
+    display: block;
+}
+
+.formelems {
+    display: grid;
+    grid-template-columns: 65% 35%;
+}
+
+.typesofinpimg {
+    width: 100%;
+}
+
+#htmlvshtml5table {
+    width: 90%;
+    margin-inline: auto;
+}
+
+#nextpgbtn {
+    width: 100%;
+    padding: 1em;
+    margin: 3em 0em;
+    display: flex;
+    justify-content: center;
+}
+
+#nextpgbtn button:hover {
+    background: rgb(85, 85, 176);
+    transform: scale(0.95);
+}
+
+#nextpgbtn button {
+    all: unset;
+    transition: 0.5s;
+    cursor: pointer;
+    background: rgb(67, 67, 136);
+    border-radius: 0.2em;
+    padding: .3em .5em;
+    width: fit-content;
+    text-align: center;
+    margin-inline: auto;
+}
+
+#backtohtml {
+    width: 100%;
+}
+
+#backtohtml button {
+    all: unset;
+    cursor: pointer;
+    font-weight: bold;
+    border: 2px solid #ffffff08;
+    border-radius: 0.2em;
+    padding: .3em .5em;
+    width: fit-content;
+    text-align: center;
+    margin-inline: auto;
+    /* position: absolute; */
+}

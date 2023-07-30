@@ -1,0 +1,18 @@
+/* content */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* code */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+/* heading */
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+:root {
+    --headingfont: "Mulish";
+    --contentfont: "Poppins";
+    --codefont: "Roboto Mono";
+    --font-color: #d6d6d4;
+}
+
+.highlight-cssCode {
+    color: #abaaaacf;
+    font-family: var(--codefont);
+}
