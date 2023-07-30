@@ -9,6 +9,12 @@
 </head>
 
 <body>
+    <div id="NonresponsiveWarn-container">
+        <div id="NonresponsiveWarn">
+            <p>Site Not responsive <br>Sorry for the inconvenience</p> 
+            <button onclick=showmain()>Show Anyway</button>
+        </div>
+    </div>
     <div id="main">
         <div id="mainTop">
             <!-- <br /> is line break tag for next line -->
@@ -29,7 +35,7 @@
                     class="indexlinktxt">history and versions. </a><a class="indexlinktxt" href="#htmlElements">HTML
                     elements </a>: headings, paragraphs,
                 line break, colors and fonts,
-                links, frames, lists, tables, images and forms, Difference between HTML and HTML5. CSS: Introduction to
+                links, frames, lists, tables, images and forms, Difference between HTML and HTML5. <a class="indexlinktxt" href="#nextpgbtn">CSS</a>: Introduction to
                 Style Sheet, CSS features, CSS core syntax, Style sheets and HTML, Style rule cascading and inheritance,
                 text properties. Bootstrap.
             </div>
@@ -97,7 +103,7 @@
                             &lt;h2&gt; Heading &lt;/h2&gt;
                         </span>
                         <span class="tagprev">
-                            <p class="heading">Heading</h2>
+                            <h2>Heading</h2>
                         </span>
                     </div>
                     <div class="elements-headingtag">
@@ -205,17 +211,18 @@
                     document)</p>
                 <br>
                 <code class="fadedtext iframecode">
-                    &lt;iframe style="width: 95%; height: 200px; margin: 5% 2.5%; " src="https://en.wikipedia.org/wiki/Wiki"&gt&lt;/iframe&gt;;
+                    &lt;iframe style="width: 95%; height: 400px; margin: 5% 2.5%; " src="https://en.wikipedia.org/wiki/Wiki"&gt&lt;/iframe&gt;;
                 </code>
                 <div id="iframecontainer">
-                    <iframe loading="lazy" style="position: relative; width: 95%; height: 200px; margin: 5% 2.5%; " src="https://en.wikipedia.org/wiki/Wiki" ></iframe>
+                    <iframe loading="lazy" style="position: relative; width: 95%; height: 400px; margin: 5% 2.5%; "
+                        src="https://en.wikipedia.org/wiki/Wiki"></iframe>
                 </div>
-            </div> 
+            </div>
             <div class="mainBody-contents" id="table_and_lists">
                 <p class="heading">
                     &gt; Tables and Lists
                 </p><br>
-                 
+
                 <div class="explainLists">
                     <div class="listexampleimg-container">
                         <img class="listexampleimg" src="./images/listprev.png" alt="liistsexample">
@@ -241,7 +248,7 @@
                         </li>
                     </ol>
                     <div class="olexampleimg-container">
-                        <img class="olexampleimg" src="./images/ol prev.png" alt="unavailable" > 
+                        <img class="olexampleimg" src="./images/ol prev.png" alt="unavailable">
                     </div>
                 </div>
                 <div class="explaintables">
@@ -327,10 +334,10 @@ th {
                         to use tables
                         only for data presentation and avoid using them for layout purposes, as it may affect
                         accessibility and
-                        responsiveness. 
+                        responsiveness.
                     </p>
                 </div>
-                
+
             </div>
             <div class="mainBody-contents" id="Images_and_forms">
                 <p class="heading">
@@ -401,13 +408,13 @@ th {
                     <p>HTML also supports image maps, allowing you to define clickable areas on an image linked to
                         different URLs or
                         actions:</p>
-                    <pre class="fadedtext">
+                    <code class="fadedtext">
 &lt;img src="path/to/image.jpg" alt="Image Map" usemap="#mapname"&gt;
 &lt;map name="mapname"&gt;
     &lt;area shape="rect" coords="x1,y1,x2,y2" href="link1.html" alt="Link 1"&gt;
     &lt;area shape="circle" coords="x,y,radius" href="link2.html" alt="Link 2"&gt;
 &lt;/map&gt;
-                    </pre>
+                    </code>
                 </div>
                 <div id="explainforms">
                     <p class="heading">HTML Form tag</p>
@@ -519,12 +526,28 @@ th {
         <div id="contributeQR">
             <div>
                 <h2><a target="_blank" href="./images/githubQR.png">Click to expand >></a></h2>
-                <p>View Source Code on Github <br> <a href="https://www.github.com/1447bytes" target="_blank">@1447bytes</a></p>
+                <p>View Source Code on Github <br> <a href="https://www.github.com/1447bytes"
+                        target="_blank">@1447bytes</a></p>
             </div>
             <a href="./images/githubQR.png" target="_blank">
                 <img src="./images/githubQR.png" />
             </a>
         </div>
+        <div onclick=scrollUp() id="gotoTopBtn">&uarr;</div>
+
+        <script>
+            function scrollUp() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }
+            function showmain() {
+                const warning = document.getElementById("NonresponsiveWarn-container")
+                warning.style.display = "none";
+                console.log("clicked")
+            }
+        </script>
 </body>
 
 </html>

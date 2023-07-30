@@ -14,6 +14,7 @@
 
 .highlight-cssCode {
     color: #abaaaacf;
+    width: 100%;
     font-family: var(--codefont);
 }
 

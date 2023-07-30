@@ -275,7 +275,9 @@ ul > li{
                         rerum molestiae dolor aliquam possimus placeat excepturi et?
                     </p>
                 </div>
-                <p>and many <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals">More...</a></p>
+                <p>and many <a
+                        href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals">More...</a>
+                </p>
             </div>
         </div>
 
@@ -286,30 +288,36 @@ ul > li{
                     <p>Bootstrap is a powerful front-end framework for building responsive, mobile-first web
                         applications. It was
                         developed by Twitter and is now maintained by the Bootstrap team at GitHub.</p>
-<br>
+                    <br>
                     <h2>Key Features of Bootstrap</h2>
                     <ul>
-                        <li><span class="highlight-grey">Responsive Design:</span> Bootstrap's grid system and components adjust
+                        <li><span class="highlight-grey">Responsive Design:</span> Bootstrap's grid system and
+                            components adjust
                             automatically to fit
                             different screen sizes, ensuring your website looks great on various devices.</li>
-                        <li><span class="highlight-grey">Pre-styled Components:</span> Bootstrap provides a collection of ready-to-use
+                        <li><span class="highlight-grey">Pre-styled Components:</span> Bootstrap provides a collection
+                            of ready-to-use
                             UI components,
                             such as buttons, forms, navigation bars, and more, saving development time and effort.
                         </li>
-                        <li><span class="highlight-grey">Mobile-first Approach:</span> Bootstrap's CSS is designed to prioritize mobile
+                        <li><span class="highlight-grey">Mobile-first Approach:</span> Bootstrap's CSS is designed to
+                            prioritize mobile
                             devices,
                             ensuring a smooth experience for mobile users.</li>
-                        <li><span class="highlight-grey">Customizable:</span> You can customize Bootstrap's variables and styles to
+                        <li><span class="highlight-grey">Customizable:</span> You can customize Bootstrap's variables
+                            and styles to
                             match your brand
                             and design preferences.</li>
-                        <li><span class="highlight-grey">Extensive Documentation:</span> Bootstrap offers comprehensive documentation
+                        <li><span class="highlight-grey">Extensive Documentation:</span> Bootstrap offers comprehensive
+                            documentation
                             and examples to
                             help developers understand and implement its features.</li>
-                        <li><span class="highlight-grey">Browser Compatibility:</span> Bootstrap supports all modern browsers, ensuring
+                        <li><span class="highlight-grey">Browser Compatibility:</span> Bootstrap supports all modern
+                            browsers, ensuring
                             consistent
                             behavior across different platforms.</li>
                     </ul>
-<br>
+                    <br>
                     <h2>Getting Started with Bootstrap</h2>
                     <p>To use Bootstrap, include its CSS and JavaScript files in your HTML document:</p>
                     <br>
@@ -321,7 +329,7 @@ ul > li{
 &lt;script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"&gt;&lt;/script&gt;
 &lt;script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"&gt;&lt;/script&gt;
 &lt;script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"&gt;&lt;/script&gt;
-        </pre>
+                    </pre>
 
                     <h2>Using Bootstrap Components</h2>
                     <p>Bootstrap provides a wide range of components that you can easily use in your HTML:</p>
@@ -350,13 +358,25 @@ ul > li{
         <div id="contributeQR">
             <div>
                 <h2><a href="./images/githubQR.png" target="_blank">Click to expand >></a></h2>
-                <p>View Source Code on Github <br> <a target="_blank" href="https://www.github.com/1447bytes">@1447bytes</a></p>
+                <p>View Source Code on Github <br> <a target="_blank"
+                        href="https://www.github.com/1447bytes">@1447bytes</a></p>
             </div>
             <a href="./images/githubQR.png" target="_blank">
                 <img src="./images/githubQR.png" />
             </a>
         </div>
     </div>
+    <div onclick=scrollUp() id="gotoTopBtn">&uarr;</div>
+
+    <script>
+        function scrollUp() {
+            console.log("clicked")
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
 </body>
 
 </html>
