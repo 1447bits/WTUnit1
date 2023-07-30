@@ -9,13 +9,17 @@
     <link rel="stylesheet" href="./css/CssPg.css">
 </head>
 
+
+<!-- <div class="mainBody-contents" id="introToCss">
+    <h1>Introduction to CSS</h1> -->
+
 <body>
     <div id="backtohtml">
         <a href="./index.html"><button>
                 << Back to html</button></a>
     </div>
     <div id="main">
-        <div id="introToCss">
+        <div class="mainBody-contents" id="introToCss">
             <h1>Introduction to CSS</h1>
             <p>
                 CSS (Cascading Style Sheets) is a powerful styling language used to control the presentation and layout
@@ -35,7 +39,8 @@ selector {
             <p>
                 The <span class="highlight-grey">selector</span> targets HTML elements, while the <span
                     class="highlight-grey">property</span>
-                defines the style to be applied, and the <span class="highlight-grey">value</span> specifies the property's
+                defines the style to be applied, and the <span class="highlight-grey">value</span> specifies the
+                property's
                 characteristics.
             </p>
 
@@ -56,6 +61,223 @@ selector {
                 selectors and properties, you can style specific elements or apply styles globally to entire sections.
             </p>
         </div>
+
+        <div class="mainBody-contents" id="cssSelectors">
+            <h1>Types of CSS Selectors</h1>
+            <p>
+                There are several types of selectors in CSS that can be used to target different parts or components.
+            </p>
+            <ul id="typesofselector">
+                <li>
+                    The Universal Selector : selects all elements on the Page.
+                    <pre class="highlight-cssCode">
+Example :  * {
+                property : value;
+            }
+                    </pre>
+                </li>
+                <li>
+                    The Element Selector : (h1 or anyTagName) applies specific styles to the &lt;h1&gt; element.
+                    <pre class="highlight-cssCode">
+Example :  h1 {
+                property : value;
+            }            
+                    </pre>
+                </li>
+                <li>
+                    The Class Selector (.classname) selects elements with class "highlight" to style them.
+                    <pre class="highlight-cssCode">
+Example :  .classname {
+                property : value;
+            }            
+                    </pre>
+                </li>
+                <li>
+                    The ID Selector (#ID) selects the element with selected ID to apply specific styles.
+                    <pre class="highlight-cssCode">
+Example :  .ID {
+                property : value;
+            }            
+                    </pre>
+                </li>
+                <li>
+                    The Descendant Selector (div p) selects elements that are descendants of selected Element.
+                    <pre class="highlight-cssCode">
+Example : <span class="normal"> We have a HTML structure of </span>  
+            &lt;div class="parent"&gt;
+                &lt;div class="child"&gt;
+                    &lt;p&gt;text..&lt;/p&gt;    
+                &lt;/div&gt;
+            &lt;/div&gt;
+            <span class="normal"> Selector to select "p" tag will be </span>
+.parent p{
+                property : value;
+            }            
+                    </pre>
+                </li>
+                <li>
+                    The Child Selector (ul>li) selects &lt;li&gt; elements that are direct children of &lt;ul&gt; to
+                    style their list bullet.
+                    <pre class="highlight-cssCode">
+Example : <span class="normal"> We have a HTML structure of </span>  
+            &lt;ul&gt;
+                &lt;li&gt;
+                    &lt;p&gt;text..&lt;/p&gt;    
+                &lt;/li&gt;
+            &lt;/ul&gt;
+<span class="normal"> Selector to select "p" tag will be </span>
+ul > li{
+    property : value;
+    }            
+                    </pre>
+                </li>
+            </ul>
+        </div>
+
+        <div class="mainBody-contents" id="cssproperties">
+            <h1>Style rule cascading and inheritance </h1>
+            <p>
+                CSS inheritance refers to the relationship between HTML tags (think parent and children tags) and how
+                certain CSS styles can apply to a tag even though there aren't any CSS rules directly applied to it.
+                Cascading refers to the fact that cumulative styles across multiple CSS rules are applied to each and
+                every HTML tag.
+            </p>
+            <br>
+            <p>
+                Css is all about Implementation, Their are many properties under helping you create crap to charismatic
+                web pages, <br>
+                Few of them are :
+            <p><i class="highlight-grey">color</i> : used to apply color to text.</p>
+            <p><i class="highlight-grey">background</i> : used to apply background to an element.</p>
+            <p><i class="highlight-grey">font-family</i> : used to apply apply different fonts to you text.</p>
+            <p><i class="highlight-grey">font-weight</i> : used to apply apply thickness to the text.</p>
+            <p><i class="highlight-grey">font-style</i> : used to apply apply styles such as italic</p>
+            <p><i class="highlight-grey">text-decoration</i> : used to apply apply decorations such as underline to text
+            </p>
+            <p><i class="highlight-grey">text-align</i> : used to apply specify text flow left to right or center or
+                right to left.. .</p>
+            <p><i class="highlight-grey">opacity</i> : used to apply specify opacity of an element or object.</p>
+            <p><i class="highlight-grey">border</i> : As the name suggests to apply borders to html elements. it can be
+                specific like border-top, border-bottom etc..</p>
+            <p><i class="highlight-grey">padding and margin</i> : padding and margins are just the spacings arround an
+                element padding is spacing arround the element within its boundry, and margins are after the borders.
+            </p>
+            <p>and many more...</p>
+            <a target="_blank" href="https://developer.mozilla.org/en-US/">MDN Reference is the Best place to learn
+                about different CSS properties </a>
+            </p>
+        </div>
+        <div class="mainBody-contents" id="textproperties">
+            <h1>Styling text </h1>
+            <div id="textCssprops">
+                <div class="textprop">
+                    <code class="highlight-cssCode">
+                        <p class="normal">two values given, seperated by "," thie is used safety measure as if first family is absent or unavailable another one will be applied and we can give multiple options</p>
+                        font-family: 'Gill Sans',sans-serif;
+                    </code>
+                    <p class="sampletxt" style="font-family: 'Gill Sans', sans-serif;">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita exercitationem, officia
+                        accusamus quo veniam necessitatibus facere tenetur molestias dolorum. Veritatis culpa dolore
+                        rerum molestiae dolor aliquam possimus placeat excepturi et?
+                    </p>
+                </div>
+                <div class="textprop">
+                    <code class="highlight-cssCode">
+                        <p class="normal">weight value can be from [100, 200, 300, ..., 900] </p>
+                        font-weight: 800;
+                    </code>
+                    <p class="sampletxt" style="font-weight: 800;">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita exercitationem, officia
+                        accusamus quo veniam necessitatibus facere tenetur molestias dolorum. Veritatis culpa dolore
+                        rerum molestiae dolor aliquam possimus placeat excepturi et?
+                    </p>
+                </div>
+                <div class="textprop">
+                    <code class="highlight-cssCode">
+                        <p class="normal">size value can be in px(pixesls), rem or em, vw or vh(with respect to viewport height or width), and other units too.. </p>
+                        font-size: 12px;
+                    </code>
+                    <p class="sampletxt" style="font-size: 12px;">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita exercitationem, officia
+                        accusamus quo veniam necessitatibus facere tenetur molestias dolorum. Veritatis culpa dolore
+                        rerum molestiae dolor aliquam possimus placeat excepturi et?
+                    </p>
+                    <code class="highlight-cssCode">
+                        font-size: 1.5em;
+                    </code>
+                    <p class="sampletxt" style="font-size: 1.5em;">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita exercitationem, officia
+                        accusamus quo veniam necessitatibus facere tenetur molestias dolorum. Veritatis culpa dolore
+                        rerum molestiae dolor aliquam possimus placeat excepturi et?
+                    </p>
+                    <code class="highlight-cssCode">
+                        font-size: 3vh;
+                    </code>
+                    <p class="sampletxt" style="font-size: 3vh;">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita exercitationem, officia
+                        accusamus quo veniam necessitatibus facere tenetur molestias dolorum. Veritatis culpa dolore
+                        rerum molestiae dolor aliquam possimus placeat excepturi et?
+                    </p>
+                </div>
+                <div class="textprop">
+                    <code class="highlight-cssCode">
+                        <p class="normal">colors can be names such as red, green, blue or hex values or hsl values, or rga/rgba values</p>
+                        color: green;
+                    </code>
+                    <p class="sampletxt" style="color: green;">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita exercitationem, officia
+                        accusamus quo veniam necessitatibus facere tenetur molestias dolorum. Veritatis culpa dolore
+                        rerum molestiae dolor aliquam possimus placeat excepturi et?
+                    </p>
+                </div>
+                <div class="textprop">
+                    <code class="highlight-cssCode">
+                        <p class="normal">alignment can be right, left(default), center, justify </p>
+                        text-aligh: justify;
+                    </code>
+                    <p class="sampletxt" style="text-align: justify;">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita exercitationem, officia
+                        accusamus quo veniam necessitatibus facere tenetur molestias dolorum. Veritatis culpa dolore
+                        rerum molestiae dolor aliquam possimus placeat excepturi et?
+                    </p>
+                </div>
+                <div class="textprop">
+                    <code class="highlight-cssCode">
+                        <p class="normal">decorations such as underline, dashed, wavy etc </p>
+                        text-decoration: underline wavy;
+                    </code>
+                    <p class="sampletxt" style="text-decoration: underline wavy;">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita exercitationem, officia
+                        accusamus quo veniam necessitatibus facere tenetur molestias dolorum. Veritatis culpa dolore
+                        rerum molestiae dolor aliquam possimus placeat excepturi et?
+                    </p>
+                </div>
+                <div class="textprop">
+                    <code class="highlight-cssCode">
+                        <p class="normal">indentation</p>
+                        text-indent:15px;
+                    </code>
+                    <p class="sampletxt" style="text-indent:15px;">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita exercitationem, officia
+                        accusamus quo veniam necessitatibus facere tenetur molestias dolorum. Veritatis culpa dolore
+                        rerum molestiae dolor aliquam possimus placeat excepturi et?
+                    </p>
+                </div>
+                <div class="textprop">
+                    <code class="highlight-cssCode">
+                        <p class="normal">text-shadow</p>
+                        text-shadow: 2px 2px grey
+                    </code>
+                    <p class="sampletxt" style="text-shadow: 2px 2px grey">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita exercitationem, officia
+                        accusamus quo veniam necessitatibus facere tenetur molestias dolorum. Veritatis culpa dolore
+                        rerum molestiae dolor aliquam possimus placeat excepturi et?
+                    </p>
+                </div>
+                <p>and many More...</p>
+            </div>
+        </div>
+
     </div>
 </body>
 

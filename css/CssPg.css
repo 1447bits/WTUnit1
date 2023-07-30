@@ -16,3 +16,37 @@
     color: #abaaaacf;
     font-family: var(--codefont);
 }
+
+.normal::before {
+    content: "<!-- ";
+}
+
+.normal::after {
+    content: " -->";
+}
+
+.normal {
+    color: #7a8db0;
+    font-family: var(--contentfont);
+}
+
+#textCssprops {
+    margin-top: 2em;
+}
+
+#textCssprops .sampletxt {
+    margin: 1em 0 1em 0;
+}
+
+.textprop::after {
+    content: "";
+    display: block;
+    width: 50%;
+    margin-inline: auto;
+    height: 2px;
+    background-color: currentColor;
+    opacity: .1;
+}
+.textprop {
+    padding-bottom: 2em;
+}
