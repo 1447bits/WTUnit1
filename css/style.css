@@ -62,8 +62,16 @@ body {
     margin-top: 2em;
 }
 
+.mainBody-contents > div, .mainBody-contents > ul {
+    margin: 50px 0;
+}
+.mainBody-contents > *{
+    margin: 10px 0;
+}
 .mainBody-contents {
     width: 100%;
+    margin-bottom: 50px;
+    margin-top: 50px;
     padding-top: 2em;
     padding-bottom: 2em;
     border-bottom: 2px solid wheat;
@@ -168,6 +176,13 @@ ol.olexample>li {
     list-style: lower-alpha;
 }
 
+.explaintables > *, .explainLists > *{
+    margin: 30px 0px;
+}
+.explaintables, .explainLists {
+    margin: 50px 0px;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -196,7 +211,9 @@ caption {
     font-weight: bold;
     margin-bottom: 10px;
 }
-
+#explainimages > *, #explainforms > * {
+    margin: 20px 0px;
+}
 .imgexplainimg {
     margin: 0.5em;
     border-radius: 8px;
