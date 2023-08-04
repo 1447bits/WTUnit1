@@ -135,6 +135,7 @@ ul.content-desc>li {
 }
 
 #colorsAndFonts {
+    word-wrap: break-word;
     width: 100%;
 }
 
@@ -157,7 +158,13 @@ a {
 #iframecontainer {
     width: 100%;
 }
-
+#frames::-webkit-scrollbar {
+    display: none;
+}
+#frames {
+    width: 100%;
+    word-wrap: break-word;
+}
 .olexampleimg-container,
 .olexampleimg {
     width: 90%;
@@ -215,7 +222,8 @@ caption {
     margin: 20px 0px;
 }
 .imgexplainimg {
-    margin: 0.5em;
+    width: min(300px, 95%);
+    margin: 2.5%;
     border-radius: 8px;
 }
 
@@ -363,5 +371,9 @@ code.imgtagexamplecode {
 @media only screen and (max-width: 480px) {
     #NonresponsiveWarn-container {
         display: flex;
+    }
+    #contributeQR {
+        background-color: rgba(255, 255, 255, 0.406);
+        border-radius: 10px 0 0 10px;
     }
 }
