@@ -328,7 +328,7 @@ code.imgtagexamplecode {
     transition: 0.5s;
 }
 
-#NonresponsiveWarn {
+/* #NonresponsiveWarn {
     width: fit-content;
     font-size: 1.3em;
     display: flex;
@@ -360,13 +360,12 @@ code.imgtagexamplecode {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: red;
     justify-content: center;
     align-items: center;
     background: #ffffff05;
     backdrop-filter: blur(6px);
     z-index: 2;
-}
+} */
 
 @media only screen and (max-width: 480px) {
     #NonresponsiveWarn-container {
