@@ -51,3 +51,20 @@
 .textprop {
     padding-bottom: 2em;
 }
+
+li pre::-webkit-scrollbar {
+    display: none;
+}
+li pre {
+    width: 100%;
+    overflow: scroll;
+}
+
+pre.highlight-cssCode::-webkit-scrollbar {
+    display: none;
+}   
+pre.highlight-cssCode {
+    width: 100%;
+    margin: 20px 0;
+    overflow: scroll;
+}
