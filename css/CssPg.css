@@ -48,6 +48,7 @@
     background-color: currentColor;
     opacity: .1;
 }
+
 .textprop {
     padding-bottom: 2em;
 }
@@ -55,6 +56,7 @@
 li pre::-webkit-scrollbar {
     display: none;
 }
+
 li pre {
     width: 100%;
     overflow: scroll;
@@ -62,9 +64,33 @@ li pre {
 
 pre.highlight-cssCode::-webkit-scrollbar {
     display: none;
-}   
+}
+
 pre.highlight-cssCode {
     width: 100%;
     margin: 20px 0;
     overflow: scroll;
+}
+
+@media only screen and (max-width: 480px) {
+    .slide {
+        transition: 0.2s;
+        position: relative;
+        animation: slide 1s ease-in-out;
+    }
+
+    @keyframes slide {
+        from {
+            transform: translateX(0);
+        }
+
+        50% {
+            transform: translateX(-50px);
+            width: calc(100% + 50px);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
 }

@@ -376,6 +376,19 @@ ul > li{
                 behavior: 'smooth'
             });
         }
+
+        // scroll on hover animation for pre tags
+        const pretags = document.getElementsByTagName("pre");
+        for(let i = 0; i < pretags.length; i++) {
+            pretags[i].addEventListener("mouseenter", (e) => {
+                pretags[i].classList.toggle("slide")
+                console.log(pretags[i])
+            })
+            pretags[i].addEventListener("mouseleave", (e) => {
+                pretags[i].classList.toggle("slide")
+                console.log(pretags[i])
+            })
+        }
     </script>
 </body>
 
